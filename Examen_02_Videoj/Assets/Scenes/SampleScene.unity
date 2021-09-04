@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 66576139}
   m_Layer: 0
   m_Name: RedHat
-  m_TagString: Untagged
+  m_TagString: RedHat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,7 +269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66576133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.08, y: 0, z: 0}
+  m_LocalPosition: {x: -22.96, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 263483081}
@@ -288,8 +288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92acc6c7a5d57074db82047c4fef13db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityX: 3
-  jumpForce: 40
+  velocityX: 9
+  jumpForce: 48
+  isSliding: 0
 --- !u!1 &263483080
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,9 +301,10 @@ GameObject:
   m_Component:
   - component: {fileID: 263483081}
   - component: {fileID: 263483082}
+  - component: {fileID: 263483083}
   m_Layer: 12
   m_Name: RedHat Feet
-  m_TagString: Untagged
+  m_TagString: RedHatFeet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,7 +336,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4628992, y: -0.24381644}
+  m_Offset: {x: 1.3448696, y: 0.747628}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -345,8 +347,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2786465, y: 1.0696617}
+  m_Size: {x: 1.5147057, y: 3.0525508}
   m_EdgeRadius: 0
+--- !u!114 &263483083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263483080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec2d03ad4489394a8df222e8d2085b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &378691815
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,9 +567,9 @@ GameObject:
   - component: {fileID: 1315565506}
   - component: {fileID: 1315565505}
   - component: {fileID: 1315565510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FreeDino
-  m_TagString: Untagged
+  m_TagString: FreeDino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,7 +587,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3906007, y: 0}
+  m_Offset: {x: 1.3190346, y: -0.16291082}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -584,7 +598,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.018799, y: 4.72}
+  m_Size: {x: 3.1888885, y: 4.3941784}
   m_EdgeRadius: 0
 --- !u!50 &1315565506
 Rigidbody2D:
@@ -717,7 +731,7 @@ GameObject:
   - component: {fileID: 1778079972}
   m_Layer: 9
   m_Name: FreeDinoHead
-  m_TagString: Untagged
+  m_TagString: FreeDinoHead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,7 +763,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.80111074, y: 5.329131}
+  m_Offset: {x: 2.220871, y: 6.4076176}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -760,5 +774,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1595163, y: 6.3639646}
+  m_Size: {x: 0.2786045, y: 9.075108}
   m_EdgeRadius: 0

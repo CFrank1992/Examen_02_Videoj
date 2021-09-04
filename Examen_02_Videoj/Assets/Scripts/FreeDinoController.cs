@@ -5,7 +5,7 @@ using UnityEngine;
 public class FreeDinoController : MonoBehaviour
 {
     //public properties
-    public float velocityX = 4;
+    public float velocityX = 7;
     
 
     // Start is called before the first frame update
